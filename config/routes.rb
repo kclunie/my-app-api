@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'welcome#index'
+  
   resources :lists
   resources :cards do
     resources :lists
