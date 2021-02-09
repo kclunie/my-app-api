@@ -12,6 +12,11 @@ class CardsController < ApplicationController
     render json: new_card
   end
 
+  def destroy
+    @card = Card.find(params[:id])
+    @card.destroy
+  end
+
   private
 
   def card_params
