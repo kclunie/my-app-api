@@ -13,9 +13,19 @@ class CardsController < ApplicationController
   end
 
   def destroy
-    @card = Card.find(params[:id])
-    @card.destroy
+    puts "1ruby"
+    card = Card.find(params["id"])
+    puts "2ruby"
+    card.destroy
+    puts "3ruby"
   end
+
+#   def destroy
+#     @city = City.find(params["id"])
+#     @trip = Trip.find(@city.trip_id)
+#     @city.destroy
+#     render json: @trip
+# end
 
   private
 
