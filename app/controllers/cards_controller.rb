@@ -20,13 +20,6 @@ class CardsController < ApplicationController
     puts "3ruby"
   end
 
-#   def destroy
-#     @city = City.find(params["id"])
-#     @trip = Trip.find(@city.trip_id)
-#     @city.destroy
-#     render json: @trip
-# end
-
   private
 
   def card_params
