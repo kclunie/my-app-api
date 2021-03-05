@@ -17,7 +17,6 @@ class CardsController < ApplicationController
     card = Card.find(params["id"])
     puts "2ruby"
     card.destroy
-    puts "3ruby"
   end
 
   private
